@@ -37,14 +37,7 @@ function calcular(){
             division = n1 / n2;
             resultado += "<br>La division da: " + division;
         }
-        if(factorial){
-            factorial=1;
-            while(n1 > 0){
-                factorial=n1*factorial;
-                n1--;
-            }
-            resultado += "<br>El factorial da: " + factorial;
-        }
+       
         if(entero){
             let parteEntera = n1.toString().split(".")[0];
 
@@ -52,7 +45,7 @@ function calcular(){
                 parteEntera=0;
             }
 
-                resultado += "<br>La parte decimal es: " + parteEntera;
+                resultado += "<br>La parte entera es: " + parteEntera;
         }
         if(decimal){
             let parteDecimal = n1.toString().split(".")[1];
@@ -60,12 +53,19 @@ function calcular(){
             if(undefined==parteDecimal){
                 parteDecimal=0;
             }
-
-                resultado += "<br>La parte decimal es: " + parteDecimal;
-           
-            
-            
+            resultado += "<br>La parte decimal es: " + parteDecimal;
         }
+         if(factorial){
+            factorial=1;
+            while(n1 > 0){
+                factorial=n1*factorial;
+                n1--;
+            }
+            resultado += "<br>El factorial da: " + factorial;
+        }
+            
+
+    
 
     }else{
 
