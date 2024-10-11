@@ -1,0 +1,44 @@
+/* Specific styles not covered by Bootstrap */
+body {
+  background: url(../img/bgblanco.png) repeat;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+
+
+.card:hover {
+
+  background: linear-gradient(90deg, #f7b42c, #fc575e);
+}
+
+.nav-link {
+  /* Solo la transición del color de fondo */
+  transition: background .56s ease-in-out;
+}
+
+.nav-link:hover {
+  background: linear-gradient(90deg, #f7b42c, #fc575e);
+  border-radius: 1%; /* Este cambio es inmediato, sin transición */
+}
+
+.login h2 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #555;
+}
+.dropdown-item:hover{
+  color: #333;
+  background: linear-gradient(90deg, #33f72c, #fbff09);
+}
