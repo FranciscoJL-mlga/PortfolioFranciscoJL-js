@@ -10,5 +10,5 @@ document.getElementById("logout").addEventListener("click", function(event) {
     eraseCookie("loggedIn"); // borra la cookie
 
     // Redireecciona al login
-    window.location.href = "../login.html";
+    window.location.href = "../index.html";
 });
